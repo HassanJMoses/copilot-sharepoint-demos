@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Layout: Coverage summary</title>
+<!--
+  Layout for Standard - Coverage Summary.docx: Document type "Coverage summary", Scope "Standard".
+  Keep this layout (fonts, sizes, colours, spacing, margins, borders, shading, wording) and fill:
+  - each customer value in double braces, exactly as template-fields.md says.
+  No seal on this document.
+  Page: US Letter, margins 0.6in top and bottom, 0.8in left and right; body Cambria 10pt.
+-->
+<style>
+  /* US Letter with the template's margins. Nothing is wider than the text area, and full-width
+     tables are sized in %, so nothing is cut off if the converter renders on A4. */
+  @page { size: Letter; margin: 0.6in 0.8in; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body { font-family: 'Cambria', Georgia, serif; font-size: 10pt; color: #000; }
+  .page { width: 100%; max-width: 6.9in; margin: 0; }
+  header.letterhead { margin: 0 0 6pt 0; }
+  footer.disclaimer { margin-top: 18pt; }
+  table { border-collapse: collapse; max-width: 100%; }
+  td p:last-child:not([data-spacing]) { margin-bottom: 0 !important; }
+  /* The state seal, supplied through the writer's images manifest; centred under its "State of ..." caption, 0.85in in the
+     letterhead and 1.04in inside a proof card. object-fit keeps the whole seal visible. */
+  img.state-seal { display: inline-block; object-fit: contain; vertical-align: middle; border: 0; }
+  img.state-seal--header { width: 0.85in; height: 0.85in; }
+  img.state-seal--card { width: 1.04in; height: 1.04in; }
+</style>
+</head>
+<body>
+<div class="page">
+<header class="letterhead">
+<table class="plain" style="border-collapse:collapse;margin:0;width:100%;table-layout:fixed"><tr><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:60.9%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15"><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#142C52;font-weight:bold">CONTOSO</span><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#B88A2E;font-weight:bold"> INSURANCE</span></p><p data-spacing="set" style="margin:0pt 0 0pt 0;line-height:1.15"><span style="font-size:8pt;color:#5A5A5A;font-style:italic">Commercial Insurance  |  Licensed Carrier</span></p></td><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:39.1%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 4pt 0;line-height:1.15;text-align:right"><span style="font-size:9pt;color:#142C52;font-weight:bold">SUMMARY</span></p></td></tr></table>
+<p data-spacing="set" style="margin:0pt 0 10pt 0;line-height:1.15;border-bottom:3pt solid #142C52;padding-bottom:1pt">&nbsp;</p>
+</header>
+<main>
+<p data-spacing="set" style="margin:0pt 0 12pt 0;line-height:1.15;text-align:center;border-bottom:0.75pt solid #B88A2E;padding-bottom:4pt"><span style="font-size:15pt;color:#142C52;font-weight:bold">Coverage Summary</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">This summary describes, in plain language, the coverage {{business_name}} purchased effective {{policy_start_date}} under policy {{policy_number}}. It is provided for convenience only -- if this summary and the policy documents ever disagree, the policy documents control.</p>
+<table class="grid" style="border-collapse:collapse;margin:0"><tr><td style="padding:0 5.4pt;width:2.30in;background:#142C52;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:8.5pt;color:#FFFFFF;font-weight:bold">Coverage</span></p></td><td style="padding:0 5.4pt;width:2.30in;background:#142C52;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:8.5pt;color:#FFFFFF;font-weight:bold">Limit</span></p></td><td style="padding:0 5.4pt;width:2.30in;background:#142C52;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:8.5pt;color:#FFFFFF;font-weight:bold">Deductible</span></p></td></tr><tr><td style="padding:0 5.4pt;width:2.30in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">Business liability</span></p></td><td style="padding:0 5.4pt;width:2.30in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">{{liability_limit}}</span></p></td><td style="padding:0 5.4pt;width:2.30in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">See policy</span></p></td></tr><tr><td style="padding:0 5.4pt;width:2.30in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">Commercial vehicles</span></p></td><td style="padding:0 5.4pt;width:2.30in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">As scheduled</span></p></td><td style="padding:0 5.4pt;width:2.30in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">See policy</span></p></td></tr><tr><td style="padding:0 5.4pt;width:2.30in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">Workers&#x27; compensation</span></p></td><td style="padding:0 5.4pt;width:2.30in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">{{wc_limit}}</span></p></td><td style="padding:0 5.4pt;width:2.30in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">See policy</span></p></td></tr><tr><td style="padding:0 5.4pt;width:2.30in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">Property</span></p></td><td style="padding:0 5.4pt;width:2.30in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">{{property_limit}}</span></p></td><td style="padding:0 5.4pt;width:2.30in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">See policy</span></p></td></tr></table>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">What each coverage does, and an example</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Business liability covers claims against {{business_name}} for injury or property damage to someone else that you&#x27;re found responsible for. For example, if a customer slips and falls at your business and is injured, this coverage would pay their medical costs and any judgment against you, up to {{liability_limit}}.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Commercial vehicles covers the vehicles on your schedule while used for business purposes, including liability for injury or damage you cause to others, and physical damage to your own vehicle if you selected that coverage. For example, if one of your vehicles is involved in an accident while on a job, this coverage would respond for the resulting damage and injury claims.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Workers&#x27; compensation covers medical costs and a portion of lost wages for an employee injured on the job, at the benefit level required in your state, regardless of who was at fault. For example, if an employee is injured lifting equipment, this coverage pays their medical treatment and a portion of their lost wages while they recover.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Property covers damage to your business property at the address on file from a covered cause of loss, such as fire, windstorm, or theft. For example, if a storm damages your roof, this coverage would pay to repair it, subject to your deductible and the terms of the Property Coverage Form.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">What&#x27;s generally not covered, at a glance</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Each coverage form lists its exclusions in full. At a high level: intentional acts, damage to property you own or control, flood and earth movement under the property coverage, and injuries to your own employees under liability coverage (addressed instead by workers&#x27; compensation) are generally excluded. Review the applicable coverage form for the complete list.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Frequently asked questions</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">How do I add a vehicle or a new location? Contact {{salesperson_name}} or call the number below; coverage on a new vehicle or location does not take effect until we confirm it in writing.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Does my coverage follow me if I take on a job in another state? Only if that state&#x27;s required coverage and forms have been added to your policy. Contact us before starting work in a new state so we can review what&#x27;s needed.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">How do I get a certificate of insurance for a client? Contact {{salesperson_name}} with the client&#x27;s requirements, and we&#x27;ll issue a certificate showing your coverage in force.</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Coverage by location</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">This summary reflects coverage at {{street_address}}, {{city}}, {{state}} {{zip_code}}, plus any additional state-specific documents included elsewhere in this packet for other states where you reported doing business. A location not reflected here is not covered until added to your policy in writing.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Glossary</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Limit of insurance: the most we will pay under a coverage. Deductible: the amount you pay before coverage responds. Occurrence: an accident, including repeated exposure to similar harmful conditions. Named insured: the business or person shown on your Declarations as the policyholder.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">How your premium is determined</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Your annual premium of {{annual_premium}} reflects several factors: the coverages and limits you selected, your business type and years in operation, your location, the number of employees and vehicles covered, and your claims history. Adding coverage, a vehicle, or a location during the Policy Period will change your premium; removing one may generate a partial refund.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">If you need to make a change</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Changes to your coverage, address, vehicles, or contact information should be requested in writing or through your Contoso representative. Most changes take effect on the date we confirm them in writing, not the date you request them, so please allow time before a change is needed.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Questions</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Call the number on your welcome letter, or reach out to {{salesperson_name}}, your Contoso representative.</p>
+</main>
+<footer class="disclaimer">
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">8400 Innovation Parkway, Suite 300  |  Dallas, TX 75201  |  1-800-555-0100  |  contosoinsurance.example</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:6.5pt;color:#5A5A5A;font-style:italic">Contoso Insurance, Zava, and all names, addresses, policy numbers, and figures in this document are fictional, created for a product demonstration. This is not an insurance policy and provides no coverage.</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">Coverage Summary</span></p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+Library,InternalName,DisplayName,Type,Choices,Default,Formatter,Notes
+New Customers,BusinessName,Business name,Text,,,,
+New Customers,ContactName,Contact name,Text,,,,
+New Customers,ContactEmail,Contact email,Text,,,,
+New Customers,HomeState,Home state,Choice,AL;AK;AZ;AR;CA;CO;CT;DE;DC;FL;GA;HI;ID;IL;IN;IA;KS;KY;LA;ME;MD;MA;MI;MN;MS;MO;MT;NE;NV;NH;NJ;NM;NY;NC;ND;OH;OK;OR;PA;RI;SC;SD;TN;TX;UT;VT;VA;WA;WV;WI;WY,,,
+New Customers,OtherStates,Other states,Note,,,,
+New Customers,TypeOfBusiness,Type of business,Choice,Roofing contractor;Electrical contractor;Landscaping;Restaurant;Trucking,,,
+New Customers,Coverage,Coverage,MultiChoice,Business liability;Commercial vehicles;Workers' compensation;Property,,,
+New Customers,Employees,Employees,Number,,,,"No decimals, minimum 0"
+New Customers,Vehicles,Vehicles,Number,,,,"No decimals, minimum 0"
+New Customers,PolicyStartDate,Policy start date,Date,,,,Date only
+New Customers,PackageStatus,Package status,Choice,New;Needs information;Package ready,New,,Drives the Build package button
+New Customers,DocumentsIncluded,Documents included and why,Note,,,,
+New Customers,PackageLink,Package link,URL,,,,
+Templates,DocumentType,Document type,Choice,Welcome letter;Coverage summary;Privacy notice;Billing schedule;Claims guide;Proof-of-insurance card;Policy;Liability coverage form;Property coverage form;Workers' compensation notice;Workers' compensation posting;Uninsured motorist election;Vehicle schedule;Policyholder notice,,,
+Templates,Scope,Scope,Choice,Standard;State,,,
+Templates,TemplateState,State,Choice,AL;AK;AZ;AR;CA;CO;CT;DE;DC;FL;GA;HI;ID;IL;IN;IA;KS;KY;LA;ME;MD;MA;MI;MN;MS;MO;MT;NE;NV;NH;NJ;NM;NY;NC;ND;OH;OK;OR;PA;RI;SC;SD;TN;TX;UT;VT;VA;WA;WV;WI;WY,,,
+Templates,CoverageTrigger,Coverage trigger,MultiChoice,Business liability;Commercial vehicles;Workers' compensation;Property,,,
+Templates,BusinessTypeTrigger,Business type trigger,MultiChoice,Roofing contractor;Electrical contractor;Landscaping;Restaurant;Trucking,,,
+Templates,PacketOrder,Packet order,Number,,,,"No decimals; sort the default view by it, smallest first"
+Templates,FormNumber,Form number,Text,,,,
+Template Layouts,DocumentType,Document type,Choice,Welcome letter;Coverage summary;Privacy notice;Billing schedule;Claims guide;Proof-of-insurance card;Policy;Liability coverage form;Property coverage form;Workers' compensation notice;Workers' compensation posting;Uninsured motorist election;Vehicle schedule;Policyholder notice,,,
+Template Layouts,Scope,Scope,Choice,Standard;State,,,
+Template Layouts,TemplateState,State,Choice,AL;AK;AZ;AR;CA;CO;CT;DE;DC;FL;GA;HI;ID;IL;IN;IA;KS;KY;LA;ME;MD;MA;MI;MN;MS;MO;MT;NE;NV;NH;NJ;NM;NY;NC;ND;OH;OK;OR;PA;RI;SC;SD;TN;TX;UT;VT;VA;WA;WV;WI;WY,,,
+Packages,,,,,,,No extra columns
+Completed Packets,BusinessName,Business name,Text,,,,
+Completed Packets,ContactName,Contact name,Text,,,,
+Completed Packets,ContactEmail,Contact email,Text,,,,
+Completed Packets,PolicyNumber,Policy number,Text,,,,
+Completed Packets,PolicyStartDate,Policy start date,Date,,,,Date only
+Completed Packets,HomeState,Home state,Choice,AL;AK;AZ;AR;CA;CO;CT;DE;DC;FL;GA;HI;ID;IL;IN;IA;KS;KY;LA;ME;MD;MA;MI;MN;MS;MO;MT;NE;NV;NH;NJ;NM;NY;NC;ND;OH;OK;OR;PA;RI;SC;SD;TN;TX;UT;VT;VA;WA;WV;WI;WY,,,
+Completed Packets,Application,Application,URL,,,,
+Completed Packets,ApprovalStatus,Approval status,Choice,Ready for approval;Approved;Rejected;Sent,Ready for approval,,"Legacy: the build skill sets it, nothing reads it"
+Completed Packets,PacketStatus,Packet status,Choice,Packet Complete;Customer Ready;Customer Sent,Packet Complete,packet-status-formatter.json,Drives the Review packet and Send to customer buttons

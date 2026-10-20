@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Layout: Claims guide</title>
+<!--
+  Layout for Standard - How to Report a Claim.docx: Document type "Claims guide", Scope "Standard".
+  Keep this layout (fonts, sizes, colours, spacing, margins, borders, shading, wording) and fill:
+  - each customer value in double braces, exactly as template-fields.md says.
+  No seal on this document.
+  Page: US Letter, margins 0.6in top and bottom, 0.8in left and right; body Cambria 10pt.
+-->
+<style>
+  /* US Letter with the template's margins. Nothing is wider than the text area, and full-width
+     tables are sized in %, so nothing is cut off if the converter renders on A4. */
+  @page { size: Letter; margin: 0.6in 0.8in; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body { font-family: 'Cambria', Georgia, serif; font-size: 10pt; color: #000; }
+  .page { width: 100%; max-width: 6.9in; margin: 0; }
+  header.letterhead { margin: 0 0 6pt 0; }
+  footer.disclaimer { margin-top: 18pt; }
+  table { border-collapse: collapse; max-width: 100%; }
+  td p:last-child:not([data-spacing]) { margin-bottom: 0 !important; }
+  /* The state seal, supplied through the writer's images manifest; centred under its "State of ..." caption, 0.85in in the
+     letterhead and 1.04in inside a proof card. object-fit keeps the whole seal visible. */
+  img.state-seal { display: inline-block; object-fit: contain; vertical-align: middle; border: 0; }
+  img.state-seal--header { width: 0.85in; height: 0.85in; }
+  img.state-seal--card { width: 1.04in; height: 1.04in; }
+</style>
+</head>
+<body>
+<div class="page">
+<header class="letterhead">
+<table class="plain" style="border-collapse:collapse;margin:0;width:100%;table-layout:fixed"><tr><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:60.9%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15"><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#142C52;font-weight:bold">CONTOSO</span><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#B88A2E;font-weight:bold"> INSURANCE</span></p><p data-spacing="set" style="margin:0pt 0 0pt 0;line-height:1.15"><span style="font-size:8pt;color:#5A5A5A;font-style:italic">Commercial Insurance  |  Licensed Carrier</span></p></td><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:39.1%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 4pt 0;line-height:1.15;text-align:right"><span style="font-size:9pt;color:#142C52;font-weight:bold">CLAIMS</span></p></td></tr></table>
+<p data-spacing="set" style="margin:0pt 0 10pt 0;line-height:1.15;border-bottom:3pt solid #142C52;padding-bottom:1pt">&nbsp;</p>
+</header>
+<main>
+<p data-spacing="set" style="margin:0pt 0 12pt 0;line-height:1.15;text-align:center;border-bottom:0.75pt solid #B88A2E;padding-bottom:4pt"><span style="font-size:15pt;color:#142C52;font-weight:bold">How to Report a Claim</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">If something happens, here&#x27;s how to reach us and what to expect.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">24-hour claims line</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">1-800-555-0100. Have your policy number, {{policy_number}}, ready when you call. You can also start a claim online at contosoinsurance.example/claims.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">What to have ready</span></p>
+<ul style="margin:0 0 10pt 0;padding-left:0.5in"><li style="margin:0;line-height:1.15">A description of what happened and when</li><li style="margin:0;line-height:1.15">Photos of any damage or injury, if it&#x27;s safe to take them</li><li style="margin:0;line-height:1.15">Contact information for anyone else involved</li><li style="margin:0;line-height:1.15">A police or incident report, if one was filed</li><li style="margin:0;line-height:1.15">Your policy number, {{policy_number}}</li></ul>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">The claims process, step by step</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify"><span style="color:#142C52;font-weight:bold">1.  </span>Report the claim by phone or online. We&#x27;ll open a claim file and assign an adjuster.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify"><span style="color:#142C52;font-weight:bold">2.  </span>An adjuster contacts you within one business day to confirm coverage and explain what documentation is needed.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify"><span style="color:#142C52;font-weight:bold">3.  </span>We investigate, which may include reviewing documentation, inspecting damage, or speaking with witnesses.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify"><span style="color:#142C52;font-weight:bold">4.  </span>We provide a coverage decision and, where applicable, an estimate of the amount payable.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify"><span style="color:#142C52;font-weight:bold">5.  </span>Once you agree on the amount, or any dispute is resolved, we issue payment.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Guidance by type of claim</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Liability claim: do not admit fault at the scene. Give the other party our claims contact information and let the adjuster handle communication with them.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Property claim: take reasonable steps to prevent further damage, such as covering a damaged roof, and keep receipts for any temporary repairs -- we may reimburse reasonable costs.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Commercial vehicle claim: exchange insurance information with the other driver, do not leave the scene before required, and request a police report where available.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Workers&#x27; compensation claim: get the injured employee medical care first, then report the injury to us; see the Workers&#x27; Compensation Notice of Coverage in this packet for benefit details.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">If another party may be responsible</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">If a loss was caused by someone else, such as a vendor or another driver, we may pursue recovery from them on your behalf under your policy&#x27;s subrogation condition. This does not change how quickly we handle your claim.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">What happens next</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">A Contoso claims adjuster will reach out within one business day to confirm coverage and walk you through next steps. Most straightforward claims receive a coverage decision within two weeks; complex claims may take longer, and we&#x27;ll keep you updated along the way.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Keeping your business running during a claim</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">If a covered loss disrupts your operations and you purchased the Business Income and Extra Expense extension under your Property Coverage Form, let your adjuster know right away -- documenting lost income and extra expenses as they happen makes that part of the claim faster to resolve.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">After your claim closes</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">You&#x27;ll receive a written summary of the claim outcome. If you disagree with a decision, contact your adjuster first; most disagreements are resolved informally. Your policy&#x27;s appraisal condition is also available for property-value disputes, as described in your coverage form.</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Large or catastrophic events</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Following a widespread event such as a hurricane or major storm, response times may be longer than usual due to claim volume. We prioritize claims involving safety hazards and total losses, and will post event-specific updates and extended claims-line hours at contosoinsurance.example/claims when applicable.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Escalating a claim</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">If you&#x27;ve worked with your adjuster and still have concerns, you may ask to speak with a claims supervisor, or contact Contoso&#x27;s customer advocacy line, available at the number in the footer of this document.</p>
+</main>
+<footer class="disclaimer">
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">8400 Innovation Parkway, Suite 300  |  Dallas, TX 75201  |  1-800-555-0100  |  contosoinsurance.example</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:6.5pt;color:#5A5A5A;font-style:italic">Contoso Insurance, Zava, and all names, addresses, policy numbers, and figures in this document are fictional, created for a product demonstration. This is not an insurance policy and provides no coverage.</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">How to Report a Claim</span></p>
+</footer>
+</div>
+</body>
+</html>

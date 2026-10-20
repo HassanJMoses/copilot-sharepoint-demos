@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Layout: Uninsured motorist election</title>
+<!--
+  Layout for TX - Uninsured Motorist Coverage Election.docx: Document type "Uninsured motorist election", Scope "State", State "TX".
+  Keep this layout (fonts, sizes, colours, spacing, margins, borders, shading, wording) and fill:
+  - each customer value in double braces, exactly as template-fields.md says.
+  The seal in the letterhead is the file writer's image placeholder (the img whose src is the state-seal placeholder): bind it with an images manifest entry whose placeholder is state-seal, to the seal of Texas.
+  Page: US Letter, margins 0.6in top and bottom, 0.8in left and right; body Cambria 10pt.
+-->
+<style>
+  /* US Letter with the template's margins. Nothing is wider than the text area, and full-width
+     tables are sized in %, so nothing is cut off if the converter renders on A4. */
+  @page { size: Letter; margin: 0.6in 0.8in; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body { font-family: 'Cambria', Georgia, serif; font-size: 10pt; color: #000; }
+  .page { width: 100%; max-width: 6.9in; margin: 0; }
+  header.letterhead { margin: 0 0 6pt 0; }
+  footer.disclaimer { margin-top: 18pt; }
+  table { border-collapse: collapse; max-width: 100%; }
+  td p:last-child:not([data-spacing]) { margin-bottom: 0 !important; }
+  /* The state seal, supplied through the writer's images manifest; centred under its "State of ..." caption, 0.85in in the
+     letterhead and 1.04in inside a proof card. object-fit keeps the whole seal visible. */
+  img.state-seal { display: inline-block; object-fit: contain; vertical-align: middle; border: 0; }
+  img.state-seal--header { width: 0.85in; height: 0.85in; }
+  img.state-seal--card { width: 1.04in; height: 1.04in; }
+</style>
+</head>
+<body>
+<div class="page">
+<header class="letterhead">
+<table class="plain" style="border-collapse:collapse;margin:0;width:100%;table-layout:fixed"><tr><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:60.9%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15"><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#142C52;font-weight:bold">CONTOSO</span><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#B88A2E;font-weight:bold"> INSURANCE</span></p><p data-spacing="set" style="margin:0pt 0 0pt 0;line-height:1.15"><span style="font-size:8pt;color:#5A5A5A;font-style:italic">Commercial Insurance  |  Licensed Carrier</span></p></td><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:39.1%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 4pt 0;line-height:1.15;text-align:center"><span style="font-size:9pt;color:#142C52;font-weight:bold">COVERAGE ELECTION</span></p><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15;text-align:center"><span style="font-size:8pt;color:#5A5A5A">State of Texas</span></p><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15;text-align:center"><img class="state-seal state-seal--header" src="{img:state-seal}" alt="State seal" style="width:0.85in;height:0.85in;object-fit:contain;vertical-align:middle"></p><p data-spacing="set" style="margin:0pt 0 0pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">Form CI-UM-TX-01</span></p></td></tr></table>
+<p data-spacing="set" style="margin:0pt 0 10pt 0;line-height:1.15;border-bottom:3pt solid #D9822B;padding-bottom:1pt">&nbsp;</p>
+</header>
+<main>
+<p data-spacing="set" style="margin:0pt 0 12pt 0;line-height:1.15;text-align:center;border-bottom:0.75pt solid #B88A2E;padding-bottom:4pt"><span style="font-size:15pt;color:#142C52;font-weight:bold">Uninsured/Underinsured Motorist Coverage Election</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">{{business_name}} has {{vehicle_count}} vehicles covered under policy {{policy_number}}.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Uninsured and underinsured motorist coverage pays for bodily injury to you or your drivers caused by a driver who carries no insurance, or not enough insurance, to cover the damage. Texas law requires that this coverage be offered on every commercial auto policy, at a limit equal to your liability coverage, unless you reject it in writing.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">How this coverage works</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">If one of your covered drivers is injured by an at-fault driver who has no liability insurance, this coverage steps in to pay for their injuries, up to the limit you elect. If the at-fault driver has some insurance but not enough to cover the damages, underinsured motorist coverage pays the difference, up to your elected limit.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">This coverage also applies to a hit-and-run accident where the at-fault driver cannot be identified, provided the accident is reported to police within a reasonable time and documented as required by your policy.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Stacking</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Unless you elect otherwise, the limits of this coverage do not stack across multiple vehicles on this policy. A single occurrence is subject to a single uninsured/underinsured motorist limit, regardless of how many of your vehicles are involved.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Consequences of rejecting this coverage</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">If you reject uninsured/underinsured motorist coverage, you and your drivers will have no recourse under this policy for injuries caused by an uninsured or underinsured driver, beyond what your own liability or medical payments coverage may separately provide. Your rejection remains in effect for subsequent renewals of this policy unless you later request the coverage in writing.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Election</span></p>
+<table class="grid" style="border-collapse:collapse;margin:0"><tr><td style="padding:0 5.4pt;width:6.90in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9.5pt">[ X ]  I elect uninsured/underinsured motorist coverage at the same limit as my liability coverage.</span></p></td></tr><tr><td style="padding:0 5.4pt;width:6.90in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9.5pt">[    ]  I reject this coverage. I understand I am giving up protection that would otherwise apply.</span></p></td></tr></table>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15"><span style="font-weight:bold">Signed: </span>{{customer_signature}}          <span style="font-weight:bold">Date: </span>{{signature_date}}</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Example</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Suppose one of your drivers is struck by a driver who carries no insurance, resulting in $80,000 of medical and wage-loss damages that are not their fault. If you elected uninsured motorist coverage at {{liability_limit}}, this coverage would respond for the damages your driver cannot otherwise recover, up to that limit. If you had rejected this coverage, your driver would have to pursue the at-fault driver directly, with no assurance of recovering anything.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Changing your election later</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">You may change this election at any renewal by notifying {{salesperson_name}} in writing before your renewal date. A change made outside of renewal may require a new signed election form and is not effective until we confirm it in writing.</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Comparison</span></p>
+<table class="grid" style="border-collapse:collapse;margin:0"><tr><td style="padding:0 5.4pt;width:3.45in;background:#142C52;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:8.5pt;color:#FFFFFF;font-weight:bold">If you elect this coverage</span></p></td><td style="padding:0 5.4pt;width:3.45in;background:#142C52;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:8.5pt;color:#FFFFFF;font-weight:bold">If you reject this coverage</span></p></td></tr><tr><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">Your drivers are protected against injuries caused by an uninsured or underinsured driver, up to your elected limit, for a modest additional premium.</span></p></td><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">No additional premium for this coverage, but your drivers have no recourse under this policy if injured by an uninsured or underinsured driver.</span></p></td></tr></table>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">This is a Texas-specific form</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Uninsured and underinsured motorist requirements vary by state. If you add a vehicle garaged in another state, a separate election consistent with that state&#x27;s law may be required.</p>
+</main>
+<footer class="disclaimer">
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">8400 Innovation Parkway, Suite 300  |  Dallas, TX 75201  |  1-800-555-0100  |  contosoinsurance.example</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:6.5pt;color:#5A5A5A;font-style:italic">Contoso Insurance, Zava, and all names, addresses, policy numbers, and figures in this document are fictional, created for a product demonstration. This is not an insurance policy and provides no coverage.</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">Uninsured Motorist Coverage Election</span></p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Layout: Proof-of-insurance card</title>
+<!--
+  Layout for TX - Proof of Insurance Card.docx: Document type "Proof-of-insurance card", Scope "State", State "TX".
+  Keep this layout (fonts, sizes, colours, spacing, margins, borders, shading, wording) and fill:
+  - each customer value in double braces, exactly as template-fields.md says.
+  The seal in the letterhead is the file writer's image placeholder (the img whose src is the state-seal placeholder): bind it with an images manifest entry whose placeholder is state-seal, to the seal of Texas.
+  Page: US Letter, margins 0.6in top and bottom, 0.8in left and right; body Cambria 10pt.
+-->
+<style>
+  /* US Letter with the template's margins. Nothing is wider than the text area, and full-width
+     tables are sized in %, so nothing is cut off if the converter renders on A4. */
+  @page { size: Letter; margin: 0.6in 0.8in; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body { font-family: 'Cambria', Georgia, serif; font-size: 10pt; color: #000; }
+  .page { width: 100%; max-width: 6.9in; margin: 0; }
+  header.letterhead { margin: 0 0 6pt 0; }
+  footer.disclaimer { margin-top: 18pt; }
+  table { border-collapse: collapse; max-width: 100%; }
+  td p:last-child:not([data-spacing]) { margin-bottom: 0 !important; }
+  /* The state seal, supplied through the writer's images manifest; centred under its "State of ..." caption, 0.85in in the
+     letterhead and 1.04in inside a proof card. object-fit keeps the whole seal visible. */
+  img.state-seal { display: inline-block; object-fit: contain; vertical-align: middle; border: 0; }
+  img.state-seal--header { width: 0.85in; height: 0.85in; }
+  img.state-seal--card { width: 1.04in; height: 1.04in; }
+</style>
+</head>
+<body>
+<div class="page">
+<header class="letterhead">
+<table class="plain" style="border-collapse:collapse;margin:0;width:100%;table-layout:fixed"><tr><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:60.9%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15"><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#142C52;font-weight:bold">CONTOSO</span><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#B88A2E;font-weight:bold"> INSURANCE</span></p><p data-spacing="set" style="margin:0pt 0 0pt 0;line-height:1.15"><span style="font-size:8pt;color:#5A5A5A;font-style:italic">Commercial Insurance  |  Licensed Carrier</span></p></td><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:39.1%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 4pt 0;line-height:1.15;text-align:right"><span style="font-size:9pt;color:#9B1C1C;font-weight:bold">ID CARD</span></p><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15;text-align:right"><span style="font-size:8pt;color:#5A5A5A">State of Texas</span></p><p data-spacing="set" style="margin:0pt 0 0pt 0;line-height:1.15;text-align:right"><span style="font-size:7pt;color:#5A5A5A">Form CI-ID-TX-01</span></p></td></tr></table>
+<p data-spacing="set" style="margin:0pt 0 10pt 0;line-height:1.15;border-bottom:3pt solid #9B1C1C;padding-bottom:1pt">&nbsp;</p>
+</header>
+<main>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<table class="grid" style="border-collapse:collapse;margin:0;border:0.5pt solid #000"><tr><td style="padding:0 5.4pt;width:3.90in;vertical-align:top"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:10pt;color:#142C52;font-weight:bold">PROOF OF COMMERCIAL AUTO INSURANCE</span></p><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt;color:#5A5A5A">Insured: </span><span style="font-size:10pt">{{business_name}}</span></p><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt;color:#5A5A5A">Policy Number: </span><span style="font-size:10pt;font-weight:bold">{{policy_number}}</span></p><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt;color:#5A5A5A">Effective Date: </span><span style="font-size:10pt">{{policy_start_date}}</span></p><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt;color:#5A5A5A">Vehicle: </span><span style="font-size:10pt">{{vehicle.year}} {{vehicle.make}} {{vehicle.model}}</span></p><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt;color:#5A5A5A">VIN: </span><span style="font-size:10pt">{{vehicle.vin}}</span></p><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:7.5pt;color:#5A5A5A;font-style:italic">Keep this card in the vehicle while operating in Texas. A separate card is issued for each covered vehicle.</span></p></td><td style="padding:0 5.4pt;width:1.70in;vertical-align:middle"><p data-spacing="set" style="margin:4pt 0 2pt 0;line-height:1.0;text-align:center"><span style="font-size:8pt;color:#5A5A5A">State of Texas</span></p><p data-spacing="set" style="margin:0pt 0 4pt 0;line-height:1.0;text-align:center"><img class="state-seal state-seal--card" src="{img:state-seal}" alt="State seal" style="width:1.04in;height:1.04in;object-fit:contain;vertical-align:middle"></p></td></tr></table>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+</main>
+<footer class="disclaimer">
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">8400 Innovation Parkway, Suite 300  |  Dallas, TX 75201  |  1-800-555-0100  |  contosoinsurance.example</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:6.5pt;color:#5A5A5A;font-style:italic">Contoso Insurance, Zava, and all names, addresses, policy numbers, and figures in this document are fictional, created for a product demonstration. This is not an insurance policy and provides no coverage.</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">Texas Proof of Insurance Card</span></p>
+</footer>
+</div>
+</body>
+</html>

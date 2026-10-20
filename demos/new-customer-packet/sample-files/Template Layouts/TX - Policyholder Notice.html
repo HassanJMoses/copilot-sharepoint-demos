@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Layout: Policyholder notice</title>
+<!--
+  Layout for TX - Policyholder Notice.docx: Document type "Policyholder notice", Scope "State", State "TX".
+  Keep this layout (fonts, sizes, colours, spacing, margins, borders, shading, wording) and fill:
+  - each customer value in double braces, exactly as template-fields.md says.
+  The seal in the letterhead is the file writer's image placeholder (the img whose src is the state-seal placeholder): bind it with an images manifest entry whose placeholder is state-seal, to the seal of Texas.
+  Page: US Letter, margins 0.6in top and bottom, 0.8in left and right; body Cambria 10pt.
+-->
+<style>
+  /* US Letter with the template's margins. Nothing is wider than the text area, and full-width
+     tables are sized in %, so nothing is cut off if the converter renders on A4. */
+  @page { size: Letter; margin: 0.6in 0.8in; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body { font-family: 'Cambria', Georgia, serif; font-size: 10pt; color: #000; }
+  .page { width: 100%; max-width: 6.9in; margin: 0; }
+  header.letterhead { margin: 0 0 6pt 0; }
+  footer.disclaimer { margin-top: 18pt; }
+  table { border-collapse: collapse; max-width: 100%; }
+  td p:last-child:not([data-spacing]) { margin-bottom: 0 !important; }
+  /* The state seal, supplied through the writer's images manifest; centred under its "State of ..." caption, 0.85in in the
+     letterhead and 1.04in inside a proof card. object-fit keeps the whole seal visible. */
+  img.state-seal { display: inline-block; object-fit: contain; vertical-align: middle; border: 0; }
+  img.state-seal--header { width: 0.85in; height: 0.85in; }
+  img.state-seal--card { width: 1.04in; height: 1.04in; }
+</style>
+</head>
+<body>
+<div class="page">
+<header class="letterhead">
+<table class="plain" style="border-collapse:collapse;margin:0;width:100%;table-layout:fixed"><tr><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:60.9%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15"><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#142C52;font-weight:bold">CONTOSO</span><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#B88A2E;font-weight:bold"> INSURANCE</span></p><p data-spacing="set" style="margin:0pt 0 0pt 0;line-height:1.15"><span style="font-size:8pt;color:#5A5A5A;font-style:italic">Commercial Insurance  |  Licensed Carrier</span></p></td><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:39.1%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 4pt 0;line-height:1.15;text-align:center"><span style="font-size:9pt;color:#142C52;font-weight:bold">NOTICE</span></p><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15;text-align:center"><span style="font-size:8pt;color:#5A5A5A">State of Texas</span></p><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15;text-align:center"><img class="state-seal state-seal--header" src="{img:state-seal}" alt="State seal" style="width:0.85in;height:0.85in;object-fit:contain;vertical-align:middle"></p><p data-spacing="set" style="margin:0pt 0 0pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">Form CI-PN-TX-01</span></p></td></tr></table>
+<p data-spacing="set" style="margin:0pt 0 10pt 0;line-height:1.15;border-bottom:3pt solid #D9822B;padding-bottom:1pt">&nbsp;</p>
+</header>
+<main>
+<p data-spacing="set" style="margin:0pt 0 12pt 0;line-height:1.15;text-align:center;border-bottom:0.75pt solid #B88A2E;padding-bottom:4pt"><span style="font-size:15pt;color:#142C52;font-weight:bold">Policyholder Notice</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">This notice applies to {{business_name}}&#x27;s coverage under policy {{policy_number}} in the State of Texas. It bundles several notices Contoso Insurance is required, or chooses, to provide alongside your policy. Keep it with your policy documents.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Keeping your information current</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Please notify Contoso promptly if your business address, mailing address, or ownership changes. A delay in updating your information could affect how quickly we can reach you about your policy or a claim.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Filing a complaint</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">If you have a concern about your policy that your agent cannot resolve, you may contact your state&#x27;s department of insurance. Contact information is available on your state&#x27;s official insurance department website. Please have your policy number, {{policy_number}}, available when you call.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Cancellation and nonrenewal</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Either party may cancel this policy with written notice as described in the General Conditions section of your policy. We will give you advance written notice before nonrenewing or materially changing your coverage at renewal, as required by law.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Fraud warning statement</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Any person who knowingly presents a false or fraudulent claim for payment of a loss, or who knowingly presents false information in an application for insurance, may be guilty of a crime and may be subject to fines, confinement in prison, or denial of insurance benefits.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Economic and trade sanctions notice</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">This policy does not provide coverage, and we will not make any payment, to the extent that doing so would violate applicable trade or economic sanctions laws, including those administered by the U.S. Department of the Treasury&#x27;s Office of Foreign Assets Control.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Disclosure of premium and coverage for certified acts of terrorism</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Coverage for losses caused by certified acts of terrorism under applicable federal law is included in this policy. You should know that, effective the date shown in your Declarations, any losses resulting from certified acts of terrorism may be partially reimbursed by the United States government under a formula established by federal law. The portion of your premium attributable to this coverage, if any, is shown on your Coverage Summary or Declarations.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Guaranty association notice</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Contoso Insurance is a member of the Texas Property and Casualty Insurance Guaranty Association. If we become insolvent, the Association may pay some or all of your covered claim, subject to the limits and exclusions in the Texas Insurance Code. This notice is informational only and does not form part of your policy.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Electronic delivery of documents</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">If you consented to electronic delivery on your application, policy documents, notices, and billing statements will be delivered to the email address on file instead of by mail, unless you later withdraw that consent in writing.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Dispute resolution</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Before filing a lawsuit over a coverage dispute, you agree to first allow us a reasonable opportunity to investigate and respond to your concern through our internal appeals process, as described in the General Conditions of your policy.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Where to find more information</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">This notice summarizes several separate disclosures for convenience. The full text of each underlying requirement is available on request, and your policy&#x27;s General Conditions govern wherever this summary and the policy differ.</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Important phone numbers</span></p>
+<table class="grid" style="border-collapse:collapse;margin:0"><tr><td style="padding:0 5.4pt;width:3.45in;background:#142C52;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:8.5pt;color:#FFFFFF;font-weight:bold">Need</span></p></td><td style="padding:0 5.4pt;width:3.45in;background:#142C52;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:8.5pt;color:#FFFFFF;font-weight:bold">Number</span></p></td></tr><tr><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">Report a claim (24 hours)</span></p></td><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">1-800-555-0100, option 1</span></p></td></tr><tr><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">Billing questions</span></p></td><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">1-800-555-0100, option 2</span></p></td></tr><tr><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">General policy questions</span></p></td><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">1-800-555-0100, option 3</span></p></td></tr><tr><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">Texas Department of Insurance consumer help line</span></p></td><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">see tdi.texas.gov for the current number</span></p></td></tr></table>
+</main>
+<footer class="disclaimer">
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">8400 Innovation Parkway, Suite 300  |  Dallas, TX 75201  |  1-800-555-0100  |  contosoinsurance.example</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:6.5pt;color:#5A5A5A;font-style:italic">Contoso Insurance, Zava, and all names, addresses, policy numbers, and figures in this document are fictional, created for a product demonstration. This is not an insurance policy and provides no coverage.</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">Policyholder Notice</span></p>
+</footer>
+</div>
+</body>
+</html>

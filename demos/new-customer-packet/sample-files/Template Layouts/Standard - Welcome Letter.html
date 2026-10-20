@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Layout: Welcome letter</title>
+<!--
+  Layout for Standard - Welcome Letter.docx: Document type "Welcome letter", Scope "Standard".
+  Keep this layout (fonts, sizes, colours, spacing, margins, borders, shading, wording) and fill:
+  - each customer value in double braces, exactly as template-fields.md says.
+  No seal on this document.
+  Page: US Letter, margins 0.6in top and bottom, 0.8in left and right; body Cambria 10pt.
+-->
+<style>
+  /* US Letter with the template's margins. Nothing is wider than the text area, and full-width
+     tables are sized in %, so nothing is cut off if the converter renders on A4. */
+  @page { size: Letter; margin: 0.6in 0.8in; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body { font-family: 'Cambria', Georgia, serif; font-size: 10pt; color: #000; }
+  .page { width: 100%; max-width: 6.9in; margin: 0; }
+  header.letterhead { margin: 0 0 6pt 0; }
+  footer.disclaimer { margin-top: 18pt; }
+  table { border-collapse: collapse; max-width: 100%; }
+  td p:last-child:not([data-spacing]) { margin-bottom: 0 !important; }
+  /* The state seal, supplied through the writer's images manifest; centred under its "State of ..." caption, 0.85in in the
+     letterhead and 1.04in inside a proof card. object-fit keeps the whole seal visible. */
+  img.state-seal { display: inline-block; object-fit: contain; vertical-align: middle; border: 0; }
+  img.state-seal--header { width: 0.85in; height: 0.85in; }
+  img.state-seal--card { width: 1.04in; height: 1.04in; }
+</style>
+</head>
+<body>
+<div class="page">
+<header class="letterhead">
+<table class="plain" style="border-collapse:collapse;margin:0;width:100%;table-layout:fixed"><tr><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:60.9%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15"><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#142C52;font-weight:bold">CONTOSO</span><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#B88A2E;font-weight:bold"> INSURANCE</span></p><p data-spacing="set" style="margin:0pt 0 0pt 0;line-height:1.15"><span style="font-size:8pt;color:#5A5A5A;font-style:italic">Commercial Insurance  |  Licensed Carrier</span></p></td><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:39.1%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 4pt 0;line-height:1.15;text-align:right"><span style="font-size:9pt;color:#142C52;font-weight:bold">NEW BUSINESS</span></p></td></tr></table>
+<p data-spacing="set" style="margin:0pt 0 10pt 0;line-height:1.15;border-bottom:3pt solid #142C52;padding-bottom:1pt">&nbsp;</p>
+</header>
+<main>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:right">{{policy_start_date}}</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">{{contact_name}}</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">{{business_name}}</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">{{street_address}}</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">{{city}}, {{state}} {{zip_code}}</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15"><span style="font-weight:bold">Re: </span>Policy {{policy_number}} -- New Business Confirmation</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">Dear {{contact_name}},</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Welcome to Contoso Insurance. We&#x27;re pleased to confirm that {{business_name}} is now covered under the policy referenced above, effective {{policy_start_date}}.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Enclosed with this letter you&#x27;ll find your coverage summary, your policy documents, and the forms specific to your state and the coverage you selected. We recommend reviewing everything closely -- if anything looks incorrect, please contact us before your coverage takes effect so we can make any needed corrections.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">A member of our new business team is available if you have questions about your policy, your billing schedule, or how to report a claim. Thank you for choosing Contoso Insurance; we look forward to working with {{business_name}}.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">What&#x27;s enclosed in this packet</span></p>
+<ul style="margin:0 0 10pt 0;padding-left:0.5in"><li style="margin:0;line-height:1.15">Coverage Summary -- a plain-English overview of what you purchased</li><li style="margin:0;line-height:1.15">Your Commercial Policy, including the coverage forms for each coverage you selected</li><li style="margin:0;line-height:1.15">State-specific notices and forms for every state where you&#x27;ll be doing business</li><li style="margin:0;line-height:1.15">Billing and Payment Schedule</li><li style="margin:0;line-height:1.15">How to Report a Claim</li><li style="margin:0;line-height:1.15">Proof of Insurance Card(s), if you purchased commercial vehicle coverage</li></ul>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Please review each document and let us know right away if anything doesn&#x27;t match what you expected.</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">Sincerely,</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">{{salesperson_name}}</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">New Business Team, Contoso Insurance</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Your Contoso account team</span></p>
+<table class="grid" style="border-collapse:collapse;margin:0"><tr><td style="padding:0 5.4pt;width:3.45in;background:#142C52;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:8.5pt;color:#FFFFFF;font-weight:bold">Role</span></p></td><td style="padding:0 5.4pt;width:3.45in;background:#142C52;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:8.5pt;color:#FFFFFF;font-weight:bold">Contact</span></p></td></tr><tr><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">New business representative</span></p></td><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">{{salesperson_name}}</span></p></td></tr><tr><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">Underwriter</span></p></td><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">{{underwriter_name}}</span></p></td></tr><tr><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">Billing department</span></p></td><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">1-800-555-0100, option 2</span></p></td></tr><tr><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">Claims department (24 hours)</span></p></td><td style="padding:0 5.4pt;width:3.45in;vertical-align:middle;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0"><span style="font-size:9pt">1-800-555-0100, option 1</span></p></td></tr></table>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Keep this page for quick reference. We&#x27;ll let you know if any of these contacts change.</p>
+</main>
+<footer class="disclaimer">
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">8400 Innovation Parkway, Suite 300  |  Dallas, TX 75201  |  1-800-555-0100  |  contosoinsurance.example</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:6.5pt;color:#5A5A5A;font-style:italic">Contoso Insurance, Zava, and all names, addresses, policy numbers, and figures in this document are fictional, created for a product demonstration. This is not an insurance policy and provides no coverage.</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">Welcome Letter</span></p>
+</footer>
+</div>
+</body>
+</html>

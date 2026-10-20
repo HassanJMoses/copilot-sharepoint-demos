@@ -1,0 +1,65 @@
+Library,FileName,Title,DocumentType,Scope,TemplateState,CoverageTrigger,BusinessTypeTrigger,PacketOrder,FormNumber
+Templates,Standard - Welcome Letter.docx,Welcome Letter,Welcome letter,Standard,,,,10,CI-STD-01
+Templates,Standard - Coverage Summary.docx,Coverage Summary,Coverage summary,Standard,,,,20,CI-STD-02
+Templates,Standard - Privacy Notice.docx,Privacy Notice,Privacy notice,Standard,,,,30,CI-STD-03
+Templates,Standard - Billing and Payment Schedule.docx,Billing and Payment Schedule,Billing schedule,Standard,,,,40,CI-STD-04
+Templates,Standard - How to Report a Claim.docx,How to Report a Claim,Claims guide,Standard,,,,50,CI-STD-05
+Templates,TX - Policy.docx,Texas Commercial Policy,Policy,State,TX,,,110,CI-POL-TX-01
+Templates,TX - Business Liability Coverage Form.docx,Texas Business Liability Coverage Form,Liability coverage form,State,TX,Business liability,,120,CI-GL-TX-01
+Templates,TX - Property Coverage Form.docx,Texas Property Coverage Form,Property coverage form,State,TX,Property,,130,CI-PR-TX-01
+Templates,TX - Workers Compensation Notice of Coverage.docx,Texas Workers' Compensation Notice of Coverage,Workers' compensation notice,State,TX,Workers' compensation,,140,CI-WC-TX-01
+Templates,TX - Workers Compensation Employee Rights Posting.docx,Texas Workers' Compensation Employee Rights Posting,Workers' compensation posting,State,TX,Workers' compensation,,150,CI-WC-TX-02
+Templates,TX - Uninsured Motorist Coverage Election.docx,Texas Uninsured Motorist Coverage Election,Uninsured motorist election,State,TX,Commercial vehicles,,160,CI-UM-TX-01
+Templates,TX - Commercial Vehicle Schedule.docx,Texas Commercial Vehicle Schedule,Vehicle schedule,State,TX,Commercial vehicles,,170,CI-CV-TX-01
+Templates,TX - Proof of Insurance Card.docx,Texas Proof of Insurance Card,Proof-of-insurance card,State,TX,Commercial vehicles,,175,CI-ID-TX-01
+Templates,TX - Policyholder Notice.docx,Texas Policyholder Notice,Policyholder notice,State,TX,,,180,CI-PN-TX-01
+Templates,FL - Policy.docx,Florida Commercial Policy,Policy,State,FL,,,110,CI-POL-FL-01
+Templates,FL - Business Liability Coverage Form.docx,Florida Business Liability Coverage Form,Liability coverage form,State,FL,Business liability,,120,CI-GL-FL-01
+Templates,FL - Property Coverage Form.docx,Florida Property Coverage Form,Property coverage form,State,FL,Property,,130,CI-PR-FL-01
+Templates,FL - Workers Compensation Notice of Coverage.docx,Florida Workers' Compensation Notice of Coverage,Workers' compensation notice,State,FL,Workers' compensation,,140,CI-WC-FL-01
+Templates,FL - Workers Compensation Employee Rights Posting.docx,Florida Workers' Compensation Employee Rights Posting,Workers' compensation posting,State,FL,Workers' compensation,,150,CI-WC-FL-02
+Templates,FL - Uninsured Motorist Coverage Election.docx,Florida Uninsured Motorist Coverage Election,Uninsured motorist election,State,FL,Commercial vehicles,,160,CI-UM-FL-01
+Templates,FL - Commercial Vehicle Schedule.docx,Florida Commercial Vehicle Schedule,Vehicle schedule,State,FL,Commercial vehicles,,170,CI-CV-FL-01
+Templates,FL - Proof of Insurance Card.docx,Florida Proof of Insurance Card,Proof-of-insurance card,State,FL,Commercial vehicles,,175,CI-ID-FL-01
+Templates,FL - Policyholder Notice.docx,Florida Policyholder Notice,Policyholder notice,State,FL,,,180,CI-PN-FL-01
+Templates,LA - Policy.docx,Louisiana Commercial Policy,Policy,State,LA,,,110,CI-POL-LA-01
+Templates,LA - Business Liability Coverage Form.docx,Louisiana Business Liability Coverage Form,Liability coverage form,State,LA,Business liability,,120,CI-GL-LA-01
+Templates,LA - Property Coverage Form.docx,Louisiana Property Coverage Form,Property coverage form,State,LA,Property,,130,CI-PR-LA-01
+Templates,LA - Workers Compensation Notice of Coverage.docx,Louisiana Workers' Compensation Notice of Coverage,Workers' compensation notice,State,LA,Workers' compensation,,140,CI-WC-LA-01
+Templates,LA - Workers Compensation Employee Rights Posting.docx,Louisiana Workers' Compensation Employee Rights Posting,Workers' compensation posting,State,LA,Workers' compensation,,150,CI-WC-LA-02
+Templates,LA - Uninsured Motorist Coverage Election.docx,Louisiana Uninsured Motorist Coverage Election,Uninsured motorist election,State,LA,Commercial vehicles,,160,CI-UM-LA-01
+Templates,LA - Commercial Vehicle Schedule.docx,Louisiana Commercial Vehicle Schedule,Vehicle schedule,State,LA,Commercial vehicles,,170,CI-CV-LA-01
+Templates,LA - Proof of Insurance Card.docx,Louisiana Proof of Insurance Card,Proof-of-insurance card,State,LA,Commercial vehicles,,175,CI-ID-LA-01
+Templates,LA - Policyholder Notice.docx,Louisiana Policyholder Notice,Policyholder notice,State,LA,,,180,CI-PN-LA-01
+Template Layouts,Standard - Welcome Letter.html,Welcome Letter,Welcome letter,Standard,,,,,
+Template Layouts,Standard - Coverage Summary.html,Coverage Summary,Coverage summary,Standard,,,,,
+Template Layouts,Standard - Privacy Notice.html,Privacy Notice,Privacy notice,Standard,,,,,
+Template Layouts,Standard - Billing and Payment Schedule.html,Billing and Payment Schedule,Billing schedule,Standard,,,,,
+Template Layouts,Standard - How to Report a Claim.html,How to Report a Claim,Claims guide,Standard,,,,,
+Template Layouts,TX - Policy.html,Texas Commercial Policy,Policy,State,TX,,,,
+Template Layouts,TX - Business Liability Coverage Form.html,Texas Business Liability Coverage Form,Liability coverage form,State,TX,,,,
+Template Layouts,TX - Property Coverage Form.html,Texas Property Coverage Form,Property coverage form,State,TX,,,,
+Template Layouts,TX - Workers Compensation Notice of Coverage.html,Texas Workers' Compensation Notice of Coverage,Workers' compensation notice,State,TX,,,,
+Template Layouts,TX - Workers Compensation Employee Rights Posting.html,Texas Workers' Compensation Employee Rights Posting,Workers' compensation posting,State,TX,,,,
+Template Layouts,TX - Uninsured Motorist Coverage Election.html,Texas Uninsured Motorist Coverage Election,Uninsured motorist election,State,TX,,,,
+Template Layouts,TX - Commercial Vehicle Schedule.html,Texas Commercial Vehicle Schedule,Vehicle schedule,State,TX,,,,
+Template Layouts,TX - Proof of Insurance Card.html,Texas Proof of Insurance Card,Proof-of-insurance card,State,TX,,,,
+Template Layouts,TX - Policyholder Notice.html,Texas Policyholder Notice,Policyholder notice,State,TX,,,,
+Template Layouts,FL - Policy.html,Florida Commercial Policy,Policy,State,FL,,,,
+Template Layouts,FL - Business Liability Coverage Form.html,Florida Business Liability Coverage Form,Liability coverage form,State,FL,,,,
+Template Layouts,FL - Property Coverage Form.html,Florida Property Coverage Form,Property coverage form,State,FL,,,,
+Template Layouts,FL - Workers Compensation Notice of Coverage.html,Florida Workers' Compensation Notice of Coverage,Workers' compensation notice,State,FL,,,,
+Template Layouts,FL - Workers Compensation Employee Rights Posting.html,Florida Workers' Compensation Employee Rights Posting,Workers' compensation posting,State,FL,,,,
+Template Layouts,FL - Uninsured Motorist Coverage Election.html,Florida Uninsured Motorist Coverage Election,Uninsured motorist election,State,FL,,,,
+Template Layouts,FL - Commercial Vehicle Schedule.html,Florida Commercial Vehicle Schedule,Vehicle schedule,State,FL,,,,
+Template Layouts,FL - Proof of Insurance Card.html,Florida Proof of Insurance Card,Proof-of-insurance card,State,FL,,,,
+Template Layouts,FL - Policyholder Notice.html,Florida Policyholder Notice,Policyholder notice,State,FL,,,,
+Template Layouts,LA - Policy.html,Louisiana Commercial Policy,Policy,State,LA,,,,
+Template Layouts,LA - Business Liability Coverage Form.html,Louisiana Business Liability Coverage Form,Liability coverage form,State,LA,,,,
+Template Layouts,LA - Property Coverage Form.html,Louisiana Property Coverage Form,Property coverage form,State,LA,,,,
+Template Layouts,LA - Workers Compensation Notice of Coverage.html,Louisiana Workers' Compensation Notice of Coverage,Workers' compensation notice,State,LA,,,,
+Template Layouts,LA - Workers Compensation Employee Rights Posting.html,Louisiana Workers' Compensation Employee Rights Posting,Workers' compensation posting,State,LA,,,,
+Template Layouts,LA - Uninsured Motorist Coverage Election.html,Louisiana Uninsured Motorist Coverage Election,Uninsured motorist election,State,LA,,,,
+Template Layouts,LA - Commercial Vehicle Schedule.html,Louisiana Commercial Vehicle Schedule,Vehicle schedule,State,LA,,,,
+Template Layouts,LA - Proof of Insurance Card.html,Louisiana Proof of Insurance Card,Proof-of-insurance card,State,LA,,,,
+Template Layouts,LA - Policyholder Notice.html,Louisiana Policyholder Notice,Policyholder notice,State,LA,,,,

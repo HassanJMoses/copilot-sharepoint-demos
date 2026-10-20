@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Layout: Workers&#x27; compensation posting</title>
+<!--
+  Layout for LA - Workers Compensation Employee Rights Posting.docx: Document type "Workers&#x27; compensation posting", Scope "State", State "LA".
+  Keep this layout (fonts, sizes, colours, spacing, margins, borders, shading, wording) and fill:
+  - each customer value in double braces, exactly as template-fields.md says.
+  The seal in the letterhead is the file writer's image placeholder (the img whose src is the state-seal placeholder): bind it with an images manifest entry whose placeholder is state-seal, to the seal of Louisiana.
+  Page: US Letter, margins 0.6in top and bottom, 0.8in left and right; body Cambria 10pt.
+-->
+<style>
+  /* US Letter with the template's margins. Nothing is wider than the text area, and full-width
+     tables are sized in %, so nothing is cut off if the converter renders on A4. */
+  @page { size: Letter; margin: 0.6in 0.8in; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body { font-family: 'Cambria', Georgia, serif; font-size: 10pt; color: #000; }
+  .page { width: 100%; max-width: 6.9in; margin: 0; }
+  header.letterhead { margin: 0 0 6pt 0; }
+  footer.disclaimer { margin-top: 18pt; }
+  table { border-collapse: collapse; max-width: 100%; }
+  td p:last-child:not([data-spacing]) { margin-bottom: 0 !important; }
+  /* The state seal, supplied through the writer's images manifest; centred under its "State of ..." caption, 0.85in in the
+     letterhead and 1.04in inside a proof card. object-fit keeps the whole seal visible. */
+  img.state-seal { display: inline-block; object-fit: contain; vertical-align: middle; border: 0; }
+  img.state-seal--header { width: 0.85in; height: 0.85in; }
+  img.state-seal--card { width: 1.04in; height: 1.04in; }
+</style>
+</head>
+<body>
+<div class="page">
+<header class="letterhead">
+<table class="plain" style="border-collapse:collapse;margin:0;width:100%;table-layout:fixed"><tr><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:60.9%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15"><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#142C52;font-weight:bold">CONTOSO</span><span style="font-family:'Cambria',Georgia,serif;font-size:22pt;color:#B88A2E;font-weight:bold"> INSURANCE</span></p><p data-spacing="set" style="margin:0pt 0 0pt 0;line-height:1.15"><span style="font-size:8pt;color:#5A5A5A;font-style:italic">Commercial Insurance  |  Licensed Carrier</span></p></td><td style="padding:8.65pt 12.95pt 8.65pt 12.95pt;width:39.1%;vertical-align:middle"><p data-spacing="set" style="margin:0pt 0 4pt 0;line-height:1.15;text-align:center"><span style="font-size:9pt;color:#142C52;font-weight:bold">REQUIRED WORKPLACE POSTING</span></p><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15;text-align:center"><span style="font-size:8pt;color:#5A5A5A">State of Louisiana</span></p><p data-spacing="set" style="margin:0pt 0 2pt 0;line-height:1.15;text-align:center"><img class="state-seal state-seal--header" src="{img:state-seal}" alt="State seal" style="width:0.85in;height:0.85in;object-fit:contain;vertical-align:middle"></p><p data-spacing="set" style="margin:0pt 0 0pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">Form CI-WC-LA-02</span></p></td></tr></table>
+<p data-spacing="set" style="margin:0pt 0 10pt 0;line-height:1.15;border-bottom:3pt solid #D9822B;padding-bottom:1pt">&nbsp;</p>
+</header>
+<main>
+<p data-spacing="set" style="margin:0pt 0 12pt 0;line-height:1.15;text-align:center;border-bottom:0.75pt solid #B88A2E;padding-bottom:4pt"><span style="font-size:15pt;color:#142C52;font-weight:bold">Notice to Employees -- Workers&#x27; Compensation</span></p>
+<table class="grid" style="border-collapse:collapse;margin:0"><tr><td style="padding:0 5.4pt;width:6.90in;background:#142C52;vertical-align:top;border:0.5pt solid #000"><p style="margin:0pt 0 0pt 0;line-height:1.0;text-align:center"><span style="font-size:10pt;color:#FFFFFF;font-weight:bold">THIS NOTICE MUST BE POSTED WHERE EMPLOYEES CAN SEE IT</span></p></td></tr></table>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">{{business_name}} carries workers&#x27; compensation insurance through Contoso Insurance, policy {{policy_number}}.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">If you are injured on the job, you have the right to:</span></p>
+<ul style="margin:0 0 10pt 0;padding-left:0.5in"><li style="margin:0;line-height:1.15">Receive medical care for a work-related injury or illness, with no cost to you for reasonably necessary treatment.</li><li style="margin:0;line-height:1.15">File a claim for lost wages if your injury keeps you from working.</li><li style="margin:0;line-height:1.15">Choose your treating doctor from your employer&#x27;s approved network, where applicable, or request a change of doctor under the rules of your state&#x27;s workers&#x27; compensation system.</li><li style="margin:0;line-height:1.15">Request a copy of your claim file and any medical reports relied on in a decision about your claim.</li><li style="margin:0;line-height:1.15">Appeal a decision about your claim through the dispute resolution process available in your state.</li><li style="margin:0;line-height:1.15">Return to work without retaliation for having filed a good-faith claim.</li><li style="margin:0;line-height:1.15">Have a representative, including an attorney, assist you with your claim.</li></ul>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Your employer&#x27;s duties</span></p>
+<ul style="margin:0 0 10pt 0;padding-left:0.5in"><li style="margin:0;line-height:1.15">Report a work injury to Contoso Insurance promptly after learning of it.</li><li style="margin:0;line-height:1.15">Post this notice where employees can see it and provide information about your rights on request.</li><li style="margin:0;line-height:1.15">Not take adverse action against you for filing a claim in good faith, including termination, demotion, or reduction in hours.</li><li style="margin:0;line-height:1.15">Maintain workers&#x27; compensation coverage for the duration of your employment, as required by law.</li></ul>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">If you disagree with a decision about your claim</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">You may request a review of the decision through your state&#x27;s workers&#x27; compensation agency. Many states offer an informal dispute resolution process before a formal hearing is required; your state agency&#x27;s website explains the steps and any deadlines that apply.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Common questions</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Will I be paid while I&#x27;m out of work? Temporary income benefits generally begin after a short waiting period and continue until you reach maximum medical improvement or return to work at your pre-injury wage, whichever comes first.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Can I be fired for filing a claim? No. Filing a good-faith workers&#x27; compensation claim is a protected activity, and retaliation for doing so is prohibited by law.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">What if I disagree with my assigned doctor? In most states you may request a change of treating doctor, subject to the rules of the network or system your employer participates in.</p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">For questions about your rights under workers&#x27; compensation, contact your state&#x27;s workers&#x27; compensation agency or the Contoso claims line listed elsewhere in this packet.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">A note for supervisors and managers</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Supervisors should know where this posting is displayed, understand the basic injury-reporting process, and never discourage an employee from reporting an injury or seeking medical care. Delayed or discouraged reporting is one of the most common causes of complications in a workers&#x27; compensation claim.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Posting requirements</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">This notice must be displayed in a conspicuous place at each work location where covered employees can reasonably be expected to see it, such as a break room or near a time clock. If your business operates at more than one location, a copy must be posted at each one.</p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15">&nbsp;</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Language access</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">If a significant portion of your workforce is more comfortable reading a language other than English, you should post this notice in that language as well where required by your state; contact Contoso for a translated version if one is not already in your packet.</p>
+<p data-spacing="set" style="margin:10pt 0 4pt 0;line-height:1.15"><span style="font-size:12pt;color:#142C52;font-weight:bold">Record of posting</span></p>
+<p data-spacing="set" style="margin:0pt 0 6pt 0;line-height:1.15;text-align:justify">Keep a record of where and when this notice was posted at each location. If you replace or relocate this posting, update your record accordingly -- some states require this as part of a compliance audit.</p>
+</main>
+<footer class="disclaimer">
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">8400 Innovation Parkway, Suite 300  |  Dallas, TX 75201  |  1-800-555-0100  |  contosoinsurance.example</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:6.5pt;color:#5A5A5A;font-style:italic">Contoso Insurance, Zava, and all names, addresses, policy numbers, and figures in this document are fictional, created for a product demonstration. This is not an insurance policy and provides no coverage.</span></p>
+<p style="margin:0pt 0 10pt 0;line-height:1.15;text-align:center"><span style="font-size:7pt;color:#5A5A5A">Workers&#x27; Compensation Employee Rights Posting</span></p>
+</footer>
+</div>
+</body>
+</html>
