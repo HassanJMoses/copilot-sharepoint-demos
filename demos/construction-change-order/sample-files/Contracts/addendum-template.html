@@ -1,0 +1,48 @@
+<style>
+@page { margin: 54pt 54pt 60pt 54pt; }
+body { font-family: Times-Roman; font-size: 10.5pt; line-height: 1.38; color: #111; }
+h1 { font-family: Helvetica-Bold; font-size: 17pt; text-align: center; letter-spacing: 1px; margin: 0 0 4pt 0; }
+h2 { font-family: Helvetica-Bold; font-size: 11.5pt; margin: 16pt 0 5pt 0; border-bottom: 0.8pt solid #333; padding-bottom: 2pt; }
+h3 { font-family: Helvetica-Bold; font-size: 10.5pt; margin: 11pt 0 3pt 0; }
+p { margin: 0 0 6pt 0; text-align: justify; }
+ul { margin: 2pt 0 6pt 16pt; padding: 0; }
+li { margin: 0 0 2.5pt 0; }
+.sub { text-align: center; font-family: Helvetica; font-size: 9.5pt; color: #333; margin-bottom: 14pt; }
+.box { border: 1pt solid #333; padding: 7pt 9pt; margin: 6pt 0 12pt 0; }
+.box p { margin: 0 0 2pt 0; text-align: left; }
+.muted { color: #444; font-style: italic; }
+.note { font-style: italic; color: #333; }
+table { border-collapse: collapse; width: 100%; margin: 4pt 0 10pt 0; font-size: 9.8pt; }
+th, td { border: 0.7pt solid #444; padding: 3.5pt 5pt; vertical-align: top; }
+th { font-family: Helvetica-Bold; text-align: left; }
+td.num, th.num { text-align: right; }
+.sig { margin-top: 26pt; }
+.sig td { border: none; border-top: 0.8pt solid #333; padding-top: 3pt; width: 46%; font-size: 9.5pt; }
+.sig td.gap { border: none; width: 8%; }
+.small { font-size: 9pt; color: #333; }
+.lbl { font-family: Helvetica-Bold; font-size: 9.5pt; margin: 6pt 0 2pt 0; }
+td.cmp { width: 50%; }
+.hdr { font-family: Helvetica; font-size: 9pt; color: #333; margin-bottom: 2pt; }
+</style>
+<!-- Addendum cover sheet (short, user 2026-10-25): which change order was added, contract sum and completion
+before and after, attachment order. The confirm-change-impact skill fills every named placeholder (double-brace token) from the Projects row,
+the Change Orders row and the Change rows, saves it as "<CO No> Addendum - <Project Name>.html" in Contracts, converts
+it to PDF, and merges: this sheet, then the signed contract, then the change order, each on its own pages. Keep the markup. -->
+<p class="hdr"><b>Zava Builders</b> · 1200 Granite Way, Suite 400, Columbus, OH 43215 · 614-555-0142</p>
+<h1>Contract Addendum</h1>
+<p class="sub">Addendum {{addendum_no}} to the Agreement for Construction Services dated {{contract_date}} · Project {{project_id}} · {{project_name}}</p>
+<div class="box">
+<p><b>Change order:</b> {{change_order_no}} · {{change_order_title}}</p>
+<p><b>Submitted by:</b> {{vendor}} on {{submitted_on}} &nbsp;&nbsp; <b>Accepted by:</b> {{accepted_by}} on {{accepted_on}}</p>
+<p><b>Contract sum:</b> {{original_total}} before this addendum · {{current_total}} after</p>
+<p><b>Planned completion:</b> {{original_completion}} before this addendum · {{current_completion}} after</p>
+</div>
+<h2>1. Changes to the Work</h2>
+<p>The Agreement is amended by the attached change order {{change_order_no}}, which is incorporated in full. The changes to the Work, their schedule impact and their cost are as stated in that change order.</p>
+<h2>2. Order of precedence</h2>
+<ul>
+<li>This addendum and the attached change order take precedence over the Agreement for the matters they address.</li>
+<li>All other terms of the Agreement remain in force.</li>
+<li>The attached documents are, in order: this addendum, the Agreement dated {{contract_date}}, and change order {{change_order_no}}.</li>
+</ul>
+<p class="small" style="margin-top:18pt">Zava Builders, its projects, vendors, people and figures are fictional, created for a product demonstration.</p>

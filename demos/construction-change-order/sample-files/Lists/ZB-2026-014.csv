@@ -1,0 +1,13 @@
+﻿Title,RowKind,PhaseNo,PhaseName,DependsOn,Vendor,PhaseManager,Start,End,Cost,PhaseStatus
+Phase 1 · Site work and foundations,Original,1,Site work and foundations,,Contoso Concrete,Luis Herrera,2026-06-01,2026-07-10,820000,
+Phase 2 · Structural frame,Original,2,Structural frame,,Northwind Structures,Grace Lindqvist,2026-07-13,2026-09-04,1450000,
+Phase 3 · Concrete floors and slabs,Original,3,Concrete floors and slabs,1,Contoso Concrete,Luis Herrera,2026-09-14,2026-11-06,980000,
+Phase 4 · Interior build-out,Original,4,Interior build-out,3,Wingtip Interiors,Tomas Berg,2026-11-16,2027-01-22,1620000,
+Phase 5 · Envelope and glazing,Original,5,Envelope and glazing,2,Northwind Structures,Grace Lindqvist,2026-09-14,2026-11-20,1130000,
+Phase 6 · Fit-out and furniture,Original,6,Fit-out and furniture,4,Litware Workplace,Priya Raman,2027-02-01,2027-03-12,400000,
+Phase 1 · Site work and foundations,Current,1,Site work and foundations,,Contoso Concrete,Luis Herrera,2026-06-01,2026-07-10,820000,Complete
+Phase 2 · Structural frame,Current,2,Structural frame,,Northwind Structures,Grace Lindqvist,2026-07-13,2026-09-04,1450000,Complete
+Phase 3 · Concrete floors and slabs,Current,3,Concrete floors and slabs,1,Contoso Concrete,Luis Herrera,2026-09-14,2026-11-06,980000,In Progress
+Phase 4 · Interior build-out,Current,4,Interior build-out,3,Wingtip Interiors,Tomas Berg,2026-11-16,2027-01-22,1620000,Not Started
+Phase 5 · Envelope and glazing,Current,5,Envelope and glazing,2,Northwind Structures,Grace Lindqvist,2026-09-14,2026-11-20,1130000,In Progress
+Phase 6 · Fit-out and furniture,Current,6,Fit-out and furniture,4,Litware Workplace,Priya Raman,2027-02-01,2027-03-12,400000,Not Started

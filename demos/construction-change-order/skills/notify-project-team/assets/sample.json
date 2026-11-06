@@ -1,0 +1,62 @@
+[
+  {
+    "name": "pnp-sharepoint-skills-notify-project-team",
+    "source": "pnp",
+    "title": "Notify Project Team",
+    "shortDescription": "Tells every phase manager on a project about a reviewed change order: an impact notice for phases that moved, an information notice for the rest, each linking the addendum, sent only after \"Confirm to send\".",
+    "url": "https://github.com/HassanJMoses/copilot-sharepoint-demos/tree/main/demos/construction-change-order/skills/notify-project-team",
+    "longDescription": [
+      "Reads the change order's Change rows and the Project Team list, decides the template per phase, and lists who gets which notice with the effect, dates, cost and the addendum link before any email is rendered.",
+      "Sends only after the exact reply \"Confirm to send\": one email per phase from two templates, the team on copy, recording each phase on the row as it goes so a stop between sends is never lost.",
+      "Sets the change order to Sent when every phase with an address has been notified; a refused send is reported and offered again on the next press."
+    ],
+    "creationDateTime": "2026-11-06",
+    "updateDateTime": "2026-11-06",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SharePoint-AI-Skill"
+      },
+      {
+        "key": "SKILL-CATEGORY",
+        "value": "Communication"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/HassanJMoses/copilot-sharepoint-demos/raw/main/demos/construction-change-order/skills/notify-project-team/assets/preview.png",
+        "alt": "Notify Project Team skill output"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "HassanJMoses",
+        "pictureUrl": "https://github.com/HassanJMoses.png",
+        "name": "Hassan Moses"
+      }
+    ],
+    "references": [
+      {
+        "name": "agentskills.io specification",
+        "description": "The specification that SharePoint AI skills follow for installation and discovery.",
+        "url": "https://agentskills.io/specification"
+      },
+      {
+        "name": "Change Order Management demo",
+        "description": "The full demo: story, sample files, dashboard prompts, setup and video.",
+        "url": "https://github.com/HassanJMoses/copilot-sharepoint-demos"
+      },
+      {
+        "name": "Demo video",
+        "description": "Copilot in SharePoint for Construction: the three skills end to end.",
+        "url": "https://www.youtube.com/watch?v=oblKIcqcUDI"
+      }
+    ]
+  }
+]

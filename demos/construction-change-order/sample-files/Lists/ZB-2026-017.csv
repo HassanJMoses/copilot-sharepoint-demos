@@ -1,0 +1,15 @@
+﻿Title,RowKind,PhaseNo,PhaseName,DependsOn,Vendor,PhaseManager,Start,End,Cost,PhaseStatus
+Phase 1 · Site work and foundations,Original,1,Site work and foundations,,Contoso Concrete,Luis Herrera,2026-07-06,2026-08-14,980000,
+Phase 2 · Structural frame,Original,2,Structural frame,,Northwind Structures,Grace Lindqvist,2026-08-24,2026-10-30,1900000,
+Phase 3 · Concrete floors and slabs,Original,3,Concrete floors and slabs,1,Contoso Concrete,Luis Herrera,2026-09-07,2026-10-30,1150000,
+Phase 4 · MEP rough-in,Original,4,MEP rough-in,3,Tailspin Mechanical,Noor Haddad,2026-11-09,2026-12-18,1240000,
+Phase 5 · Envelope and glazing,Original,5,Envelope and glazing,2,Northwind Structures,Grace Lindqvist,2026-11-09,2027-01-08,1380000,
+Phase 6 · Interior build-out,Original,6,Interior build-out,4,Wingtip Interiors,Tomas Berg,2027-01-04,2027-02-26,1050000,
+Phase 7 · Fit-out and furniture,Original,7,Fit-out and furniture,6,Litware Workplace,Priya Raman,2027-03-08,2027-04-16,400000,
+Phase 1 · Site work and foundations,Current,1,Site work and foundations,,Contoso Concrete,Luis Herrera,2026-07-06,2026-08-14,980000,Complete
+Phase 2 · Structural frame,Current,2,Structural frame,,Northwind Structures,Grace Lindqvist,2026-08-24,2026-10-30,1900000,In Progress
+Phase 3 · Concrete floors and slabs,Current,3,Concrete floors and slabs,1,Contoso Concrete,Luis Herrera,2026-09-07,2026-10-30,1150000,In Progress
+Phase 4 · MEP rough-in,Current,4,MEP rough-in,3,Tailspin Mechanical,Noor Haddad,2026-11-09,2026-12-18,1240000,Not Started
+Phase 5 · Envelope and glazing,Current,5,Envelope and glazing,2,Northwind Structures,Grace Lindqvist,2026-11-09,2027-01-08,1380000,Not Started
+Phase 6 · Interior build-out,Current,6,Interior build-out,4,Wingtip Interiors,Tomas Berg,2027-01-04,2027-02-26,1050000,Not Started
+Phase 7 · Fit-out and furniture,Current,7,Fit-out and furniture,6,Litware Workplace,Priya Raman,2027-03-08,2027-04-16,400000,Not Started

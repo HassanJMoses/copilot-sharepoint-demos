@@ -1,0 +1,62 @@
+[
+  {
+    "name": "pnp-sharepoint-skills-assess-change-order",
+    "source": "pnp",
+    "title": "Assess Change Order",
+    "shortDescription": "Reads an accepted construction change order, matches its project by ID, follows the project's dependency chain to find every phase that moves, and records the impact as rows for a person to review.",
+    "url": "https://github.com/HassanJMoses/copilot-sharepoint-demos/tree/main/demos/construction-change-order/skills/assess-change-order",
+    "longDescription": [
+      "Reads the change order PDF and takes the schedule impact in days and the cost change from the document; it never estimates.",
+      "Matches the project by ID (a wrong ID stops the skill with nothing written), reads the project's phase list, and follows the Depends On column: the named phase grows, dependent phases slide whole, everything else is informational.",
+      "Prints a receipt with every phase marked Direct, Shifted or Informational and the completion and total before and after, writes one Change row per moved phase, and sets the change order to Assessed with a link to the live dashboard."
+    ],
+    "creationDateTime": "2026-11-06",
+    "updateDateTime": "2026-11-06",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SharePoint-AI-Skill"
+      },
+      {
+        "key": "SKILL-CATEGORY",
+        "value": "Document Processing"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/HassanJMoses/copilot-sharepoint-demos/raw/main/demos/construction-change-order/skills/assess-change-order/assets/preview.png",
+        "alt": "Assess Change Order skill output"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "HassanJMoses",
+        "pictureUrl": "https://github.com/HassanJMoses.png",
+        "name": "Hassan Moses"
+      }
+    ],
+    "references": [
+      {
+        "name": "agentskills.io specification",
+        "description": "The specification that SharePoint AI skills follow for installation and discovery.",
+        "url": "https://agentskills.io/specification"
+      },
+      {
+        "name": "Change Order Management demo",
+        "description": "The full demo: story, sample files, dashboard prompts, setup and video.",
+        "url": "https://github.com/HassanJMoses/copilot-sharepoint-demos"
+      },
+      {
+        "name": "Demo video",
+        "description": "Copilot in SharePoint for Construction: the three skills end to end.",
+        "url": "https://www.youtube.com/watch?v=oblKIcqcUDI"
+      }
+    ]
+  }
+]
